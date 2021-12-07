@@ -31,6 +31,14 @@
 
 # UI overview ❤️ 
 
+## Loading screen
+
+![image](https://user-images.githubusercontent.com/43011442/144991626-1d0557fe-424f-4f16-a481-6ce88b79a945.png)
+
+
+## Landing Page
+
+![image](https://user-images.githubusercontent.com/43011442/144991705-7efae360-630a-45a4-b52c-fdf9715e5f63.png)
 
 
 <br>
