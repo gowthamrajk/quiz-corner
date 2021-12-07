@@ -26,10 +26,6 @@
 
 ![MySQL](https://img.shields.io/static/v1?style=for-the-badge&message=MySQL&color=4479A1&logo=MySQL&logoColor=FFFFFF&label=)
 
-## Development 🔭
-
-![Java](https://img.shields.io/static/v1?style=for-the-badge&message=Open+JDK+14&color=007396&label=)
-
 ## Development Tools 📺
 
 ![](https://img.shields.io/static/v1?style=for-the-badge&message=Sublime+Text&color=222222&logo=Sublime+Text&logoColor=FF9800&label=)
