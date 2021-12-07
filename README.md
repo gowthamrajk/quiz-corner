@@ -61,9 +61,19 @@
 
 ![image](https://user-images.githubusercontent.com/43011442/144992820-d3d67693-27bf-497d-9878-ca2933d61cdc.png)
 
+## Quiz Page
+
+![image](https://user-images.githubusercontent.com/43011442/144993283-336e9b5b-e179-4991-8898-eb35fd046e92.png)
+![image](https://user-images.githubusercontent.com/43011442/144993348-647e7706-4094-497c-bce2-5fadc531f1b6.png)
+
 ## C Programming Quiz Selection
 
 ![image](https://user-images.githubusercontent.com/43011442/144992875-bb8b723a-1962-4810-ad03-bffea4f2de6f.png)
+
+## Quiz Page
+
+![image](https://user-images.githubusercontent.com/43011442/144993453-a2382f0d-4b8d-4b2a-b6f1-688669987abd.png)
+![image](https://user-images.githubusercontent.com/43011442/144993499-8a78bc57-ceaa-41ab-8d85-518bdf3d0f23.png)
 
 ## Test Summary
 
