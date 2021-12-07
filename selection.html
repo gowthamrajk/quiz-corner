@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Selection Page</title>
+		<link rel="shortout icon" type="image/x-icon" href="img/selection.png">
+		<link rel="stylesheet" href="css/selection.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="box">
+				<div class="imgBx">
+					<img src="img/javaprogramming.png">
+				</div>
+				<div class="content">
+					<h2>Java Programming</h2>
+					<p>It has 10+ Java Programming sub-topics from which you can choose any of your convenient topic and start practicing the quiz</p>
+					<a href="java.html">Choose Topic</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="img/C programming.png">
+				</div>
+				<div class="content">
+					<h2>C Programming</h2>
+					<p>It has 15+ C Programming sub-topics from which you can choose any of your convenient topic and start practicing the quiz</p>
+					<a href="programInC.html">Choose Topic</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="img/codejammbg.png">
+				</div>
+				<div class="content">
+					<h2>CODE JAMM</h2>
+					<p>My website that trains you completely in JAVA Programming completely with Interview Questions, learning resources</p>
+					<a href="https://sites.google.com/view/code-jamm">Visit Site</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="img/profilebg.png">
+				</div>
+				<div class="content">
+					<h2>Author Info</h2>
+					<p>Please have a look on this page to know about the Personal Details of this website Author</p>
+					<a href="profilecard.html">Visit</a>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="img/reportbg.png">
+				</div>
+				<div class="content">
+					<h2>Test Summary</h2>
+					<p>Click here to have a look on your entire Test summary and individual Test reports you have attempted</p>
+					<a href="viewTestReport.html">Visit</a>
+				</div>
+			</div>
+		</div>
+		<br>
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = 
+  {
+    apiKey: "AIzaSyBlzxYeO9xvN3-UyFlLPhTGM7M5i_8gjT8",
+  authDomain: "quiz-corner-5afa2.firebaseapp.com",
+  projectId: "quiz-corner-5afa2",
+  storageBucket: "quiz-corner-5afa2.appspot.com",
+  messagingSenderId: "248412314293",
+  appId: "1:248412314293:web:b871a5028b610d34db3cfc",
+  measurementId: "G-TPLYH7LM42"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const fs = firebase.firestore();
+  const db = firebase.firestore();
+</script>
+	<script src="js/testSummary.js"></script>
+</html>

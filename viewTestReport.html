@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Summary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/testSummaryStyling.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+    </style>
+  </head>
+  <body style="background-color: #ffe18f;">
+    <div class="text-center container" style="margin-top: 5%;box-shadow: 8px 8px 35px 8px #362f0b; padding: 3%; border-radius: 20px; background-color: white;">
+    <p id="headtxt" style="color: darkgreen; font-family: Aladin; font-size: 60px;">Hello, <b class="loggedUser"></b></p>
+    <h4 id="headtxt1" style="color: darkgreen; font-family: Verdana; font-weight: bold;">your Test Summary is listed below...</h4>
+    <br>
+    <table id="myTable" class="rwd-table">
+    <tbody>
+      <tr>
+        <th style="text-align: center;">Parent Topic</th>
+        <th style="text-align: center;">Sub Topic</th>
+        <th style="text-align: center;">Total Questions</th>
+        <th style="text-align: center;">Percentage</th>
+        <th style="text-align: center;">Correct Answers</th>
+        <th style="text-align: center;">Time Taken</th>
+      </tr>      
+    </tbody>
+  </table>
+  <div id="textMessage" style="display:none;">
+    <strong style="font-size:20px;color:red;">You Haven't attempted any Test yet !!! Give an Attempt and track your test summary... </strong>
+  </div>
+   <div id="textMessage1" style="display:none;">
+    <strong style="font-size:20px;color:red;">You have not logged In !!! Please login to view the Test Summary... </strong>
+  </div>
+  <br><br><br>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    </script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = 
+  {
+    apiKey: "AIzaSyBlzxYeO9xvN3-UyFlLPhTGM7M5i_8gjT8",
+  authDomain: "quiz-corner-5afa2.firebaseapp.com",
+  projectId: "quiz-corner-5afa2",
+  storageBucket: "quiz-corner-5afa2.appspot.com",
+  messagingSenderId: "248412314293",
+  appId: "1:248412314293:web:b871a5028b610d34db3cfc",
+  measurementId: "G-TPLYH7LM42"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const fs = firebase.firestore();
+  const db = firebase.firestore();
+</script>
+  <script src="js/testSummary.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Java 8</title>
+	<link rel="icon" href="img/quiz.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+	<div class="home-box custom-box">
+		<h3>INSTRUCTIONS </h3><br>
+		<p>This Quiz will test your Knowledge in <b class="sub-title" style="color:#660000">JAVA 8</b> from Basic to Advanced Concepts</p>
+		<p><b style="color:navy">Parent Topic :    </b><b class="parent-title" style="color:maroon">JAVA Programming</b></p>
+		<p><b style="color:green">Total Number of Questions :    </b><b><span style="font-weight:bold" class="total-questions"></span> questions</b></p>
+		<p><h4><b><u>Points to be Noted:</u></b></h4></p>
+		<p>1) Each Question will have <b>30 sec</b> of time to answer<p>
+		<p>2) If not answered within the time, it will be marked as <b>un-answered</b><p>
+		<p>3) Please avoid <b>Navigation</b> from the page<p>
+		<p>4) Correct Answers will also be shown when you mark a Wrong Answer<p>
+		<p>5) Evaluation <b>score Percentange </b>and <b>Performance Rating</b> will be displayed at the end of the Quiz<p>
+		<div class="help-tip">
+			<a><i class="fa fa-lightbulb-o fa-2x" style="color:#000080"></i><span class="ml-1"><b> Un-answered question will not be awarded with Score</b></a>
+		</div>
+		<button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+	</div>
+	<div class="quiz-box custom-box hide">
+		<div class="timer">
+                <div class="time_left_txt"><b>Time Left</b></div>
+                <div class="timer_sec">00</div>
+        </div>
+        <div class="question-number">
+		</div>
+		<div class="time_line"></div>
+		<div class="question-text">
+
+		</div>
+		<div class="option-container">
+			
+		</div>
+		<div class="next-question-btn">
+			<button type="button" class="btn" onclick="next()">Next</button>
+		</div>
+		<div class="answers-indicator">
+			
+		</div>
+	</div>
+	<div class="result-box custom-box hide">
+		<h1>Quiz Result</h1>
+		<table>
+			<tr>
+				<td><b>Total Questions</b></td>
+				<td><span class="total-questions"></span></td>
+			</tr>
+			<tr>
+				<td><b>Attempted Questions</b></td>
+				<td><span class="total-attempt"></span></td>
+			</tr>
+			<tr>
+				<td><b>Not Attempted</b></td>
+				<td><span class="not-attempt"></span></td>
+			</tr>
+			<tr>
+				<td><b>Correct Answers</b></td>
+				<td><span class="total-correct"></span></td>
+			</tr>
+			<tr>
+				<td><b>Wrong Answers</b></td>
+				<td><span class="total-wrong"></span></td>
+			</tr>
+			<tr>
+				<td><b>Time Taken</b></td>
+				<td><span class="total-time-taken"></span></td>
+			</tr>
+			<tr>
+				<td><b>Percentage</b></td>
+				<td><span class="Percentage"></span></td>
+			</tr>
+			<tr>
+				<td><b>Total Score</b></td>
+				<td><span class="total-score"></span></td>
+			</tr>
+		</table>
+		<button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+		<button type="button" class="btn" onclick="goToHome()">Go To Home</button>
+		<button type="button" class="btn" onclick="document.location='profilecard.html'">Author Info</button>
+		<button type="button" class="btn" onclick="document.location='viewTestReport.html'">Summary</button>
+	</div>
+	<div class="model-container" id="model_container">
+		<div class="model">
+		    <h1>Quiz Over</h1><br>
+		    <img src="img/completed.gif" width="200" height="200"><br><br>
+		    <button class="btn" id="close">Result</button>
+	    </div>
+	</div>
+	<div class="result-container1" id="result_container1">
+		<div class="result1">
+		    <h1>Excellent!!! Keep it up </h1><br>
+		    <img src="img/excellent.gif" width="300" height="300"><br><br>
+		    <button class="btn" id="thankyou1">Thankyou</button>
+	    </div>
+	</div>
+	<div class="result-container2" id="result_container2">
+		<div class="result2">
+		    <h1>Very Good!!! Keep Learning </h1><br>
+		    <img src="img/gold.gif" width="300" height="300"><br><br>
+		    <button class="btn" id="thankyou2">Thankyou</button>
+	    </div>
+	</div>
+	<div class="result-container3" id="result_container3">
+		<div class="result3">
+		    <h1>Good!!! Keep Practicing </h1><br>
+		    <img src="img/good.gif" width="300" height="300"><br><br>
+		    <button class="btn" id="thankyou3">Thankyou</button>
+	    </div>
+	</div>
+	<div class="result-container4" id="result_container4">
+		<div class="result4">
+		    <h1>Satisfied, but not Enough </h1><br>
+		    <img src="img/satisfied.gif" width="300" height="300"><br><br>
+		    <button class="btn" id="thankyou4">Thankyou</button>
+	    </div>
+	</div>
+	<div class="result-container5" id="result_container5">
+		<div class="result5">
+		    <h1>Poor, need more Practice</h1><br><br><br>
+		    <img src="img/poor.gif" width="250" height="250"><br><br><br>
+		    <button class="btn" id="thankyou5">Thankyou</button>
+	    </div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = 
+  {
+    apiKey: "AIzaSyBlzxYeO9xvN3-UyFlLPhTGM7M5i_8gjT8",
+  authDomain: "quiz-corner-5afa2.firebaseapp.com",
+  projectId: "quiz-corner-5afa2",
+  storageBucket: "quiz-corner-5afa2.appspot.com",
+  messagingSenderId: "248412314293",
+  appId: "1:248412314293:web:b871a5028b610d34db3cfc",
+  measurementId: "G-TPLYH7LM42"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const fs = firebase.firestore();
+  const db = firebase.firestore();
+</script>
+<script src="js/java8.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

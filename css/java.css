@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #ffe18f;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.30), 20px 20px 20px 20px rgba(0, 0, 0, 0.22);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form1{
+  width: 100%;
+  max-width: 1300px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.30), 20px 20px 20px 20px rgba(0, 0, 0, 0.22);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+form 
+{
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.title 
+{
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: 'Langar', cursive;
+  line-height: 1;
+}
+
+::placeholder 
+{
+  color: white;
+  opacity: 1; 
+}
+
+.contact-info 
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+
+.contact-info .title {
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form1{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  form,
+  .contact-info {
+    padding: 1.7rem 1.6rem;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+}
+.imgflow
+{
+	position: relative;
+  padding: 2rem 0 0 0;
+  cursor: pointer;
+}
+.imgflow:hover
+{
+  transform: scale(1.1);
+  transition: transform .5s ease;
+}
+
+.buttonfx
+{
+  color: black; 
+  outline: none;
+  background: transparent;
+  border: none;
+  border: solid 1px white;
+  border-bottom: 4px solid #eee;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px; 
+  text-transform: uppercase;
+  font: bold 16px 'Bitter', sans-serif; 
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none; 
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.buttonfx:before,
+.buttonfx:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #259f6c;
+  z-index: -1;
+  transform: translate3D(0,-100%,0); 
+  transition: all .5s;
+}
+
+.buttonfx:before{
+  background: #fafcd6; 
+  z-index: -2;
+  transform: translate3D(0,0,0);
+}
+
+.buttonfx:hover{
+  color: white;
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.buttonfx:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+.c-btn
+{
+  padding: 10px 20px;
+  border: solid 1px white;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgb(146, 148, 248);
+  display: inline-block;
+  text-align: center;
+}
+.c-btn:before,
+.c-btn:after
+{
+  width: 200%;
+  background: #259f6c;
+  transform-origin: 0 bottom;
+  transform: translate3D(-50%,0,0) rotate(-50deg);
+}
+
+.c-btn:before
+{
+  opacity: .4;
+}
+
+.c-btn:hover:before,
+.c-btn:hover:after
+{
+  transform: rotate(0deg);
+  transition: all .25s;
+  cursor: pointer;
+}
+
+.c-btn:hover:after
+{
+  transition-delay: .25s;
+
+}

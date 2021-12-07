@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Nova+Flat&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Open Sans', serif;
+}
+
+.clockContainer
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 1px
+    padding: 10px;
+    margin-top: -10%;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.my-container
+{
+    height: auto;
+    background: #13594a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group button
+{
+    width: 100px;
+    float: right;
+    padding: 5px 10px;
+}
+.my-container button
+{
+    text-decoration: none;
+}
+
+.my-container h3, .my-container h2, .my-container h1
+{
+    font-family: 'aladin';
+    color: white;
+}
+.my-container h5
+{
+    font-family: 'Langar', cursive;
+    color: white;
+}
+
+.center 
+{
+  display: block;
+  margin-left: 230px;
+  margin-top: 20px;
+  margin-right: auto;
+  width: 20%;
+  height: 20%;
+}
+.box,
+.regbox
+{
+    width: 320px;
+    height: 540px;
+    background: #2f3542;
+    margin: 0;
+    padding: 30px;
+    margin-top: 330px;
+    left: 50%;
+    color: #fff;
+    border-radius: 15px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 29px 38px rgba(0, 0, 0, 0.30), 0 25px 22px rgba(0, 0, 0, 0.22);
+}
+
+.modal-header,
+.modal-footer
+{
+    background: #1e7363;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arimo', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: white;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.avatar 
+{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    top: -20%;
+    position: absolute;
+    left: calc(50% - 75px);
+    border-radius: 50%;
+}
+
+.box h1{
+    margin: 0;
+    padding: 30px;
+    font-family: 'aladin';
+    text-align: center;
+    font-size: 30px;
+}
+
+.box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.box input {
+    width: 95%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.box button
+{
+    display: block;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 130px;
+    background: #eccc68;
+    color: #000;
+    text-align: center;
+    padding: 5px 10px;
+    margin-left: 40px;
+    margin-top: 6%;
+    font-size: 16px;
+    font-style: bold;
+    border-radius: 20px;
+}
+
+.box button:hover 
+{
+    border: none;
+    outline: none;
+    height: 35px;
+    background: #bda046;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+.box a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.box a:hover 
+{
+    color: #eccc68;
+}
+
+.regbox .avatar {
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    height: 130px;
+    top: -12%;
+    position: absolute;
+    left: calc(50% - 65px);
+    border-radius: 50%;
+}
+
+
+.avatar:hover
+{
+    cursor: pointer;
+    transition: .5s ease-out;
+    -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+
+.regbox h1 {
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.regbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.regbox input {
+    width: 95%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.regbox input[type="text"],
+.regbox input[type="password"] {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+
+#my_centered_buttons 
+{ 
+    display: flex; 
+    justify-content: center; 
+}
+
+.regbox input[type="submit"] 
+{
+    display: block;
+    border: none;
+    width: 140px;
+    outline: none;
+    text-align: center;
+    margin: 0px auto;
+    height: 30px;
+    text-align: center;
+    background: #eccc68;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.regbox input[type="submit"]:hover {
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #f5d77a;
+    color: #8a7125;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s ease-out;
+    -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+
+.regbox a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.regbox a:hover {
+    color: #eccc68;
+}
+
+.text1
+{
+  margin-top: 28px;
+  margin-left: 140px;
+  display: block;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.model-container
+{
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    top: 30%;
+    left: 25%;
+    height: 50%;
+    border-radius: 15px;
+    width: 50%;
+    transition: opacity 0.4s ease;
+}
+.model-container.show
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+.model
+{
+    background-color: #ded5d5;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.model button
+{
+    background: green;
+    color: white;
+}
+.model h1
+{
+    font-size: 40px;
+    font-family: 'Patua One';
+    margin: 0;
+}
+
+.btn-ternary
+{
+    background: navy;
+    color: white;
+}
+
+#subtext
+{
+    display: block;
+    color: #000;
+    margin-top: -15px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 2px;
+}
+
+#signup-form .inputbox
+{
+    position: relative;
+}
+
+#signup-form.invalid .inputbox:before
+{
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 30px;
+    width: 24px;
+    height: 24px;
+    background: url(invalid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
+#signup-form.valid .inputbox:before
+{
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 30px;
+    width: 24px;
+    height: 24px;
+    background: url(valid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
+.instruction
+{
+    font-size: 14px;
+    margin-top: -10px;
+    color: #fce49a;
+    font-style: italic;
+}
+
+.input-container span
+{
+    position: absolute;
+    margin-left: -21px;
+    margin-top: 24px;
+    transform: translate(0,-50%);
+    cursor: pointer;
+}
+#signup-form .fa{
+    font-size: 20px;
+    color: #7a797e;
+}
+
+.result
+{
+    margin-top: -5px;
+}
+
+.str-box 
+{
+  position: relative;
+  width: 56px;
+  height: 8px;
+  float: left;
+}
+.str-box div {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  margin-top: 5px;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.short {
+    height: 8px;
+  color: #FF0000;
+}
+.short .str-box.box1 div {
+  background: #FF0000;
+  height: 8px;
+  width: 100%;
+}
+
+.weak {
+  color: #E66C2C;
+  height: 8px;
+}
+.weak .str-box.box1 div {
+  background: #eb852d;
+  height: 8px;
+  width: 100%;
+}
+.weak .str-box.box2 div {
+  background: #eb852d;
+  height: 8px;
+  width: 100%;
+}
+
+.good {
+  color: #f5e42f
+  height: 8px;
+}
+.good .str-box.box1 div {
+  background: #f5e42f;
+  width: 100%;
+  height: 8px;
+}
+.good .str-box.box2 div {
+  background: #f5e42f;
+  width: 100%;
+  height: 8px;
+}
+.good .str-box.box3 div {
+  background: #f5e42f;
+  height: 8px;
+  width: 100%;
+}
+
+.strong {
+  color: lime;
+  height: 8px;
+}
+.strong .str-box.box1 div {
+  background: lime;
+  width: 100%;
+  height: 8px;
+}
+.strong .str-box.box2 div {
+  background: lime;
+  height: 8px;
+  width: 100%;
+}
+.strong .str-box.box3 div {
+  background: lime;
+  height: 8px;
+  width: 100%;
+}
+.strong .str-box.box4 div {
+  background: lime;
+  height: 8px;
+  width: 100%;
+}
+
+.result {
+  font-size: 18px;
+  font-family: arial;
+  width: auto;
+  display: block;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-variant: small-caps;
+}
+
+.navbtn {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 8px 25px 8px 25px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.navbtn:hover {
+  color: white;
+  background-color: #062921;
+  padding: 8px 22px 8px 22px;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-footer button{
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.modal-footer button:hover{
+  background-color: darkred;
+  color: white;
+}
+.modal-header .close:hover {
+  color: red;
+  font-weight: bold;
+}
+.navbtn:focus, .close:focus {
+  outline: none;
+  border: none;
+}

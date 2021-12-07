@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Corner</title>
+    <link rel="shortout icon" type="image/x-icon" href="img/landingpage.png">
+    <link rel="stylesheet" href="css/landingStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Tangerine|Lato|Gamja+Flower|Open+Sans|Roboto+Slab|Indie+Flower|Lobster|Open+Sans|Kosugi+Maru">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body onload="renderTime()">
+    <div class="cont" style="border-radius: 15px; box-shadow: 8px 8px 35px 8px darkgray; margin: 2% 5% 2% 5%;">
+    <div class="my-container">
+        <center><h1 style="font-size:60px;">QUIZ CORNER</h1>
+        <h5>Lets check your technical knowledge and improve it</h5></center>
+        <br>
+        <h6><center><font color="white"><div id="clockDisplay" class="clockContainer">Date: 00:00:00</div></font></center></h6>
+        <div style="display: inline-block;">
+        <button type="button" onclick="location.href='profilecard.html';" class="navbtn">
+            <i class="fa fa-user-secret"></i> Author
+        </button>&nbsp;&nbsp;
+        <button type="button" class="navbtn" data-toggle="modal" data-target="#exampleModal">
+            <i class="fas fa-sign-up-alt"></i> Register
+        </button>&nbsp;&nbsp;
+        <button type="button" onclick="location.href='login.html';" class="navbtn">
+            <i class="fas fa-sign-in-alt"></i> Login
+        </button></div>
+    </div>
+    <center><img src="img/quizbg.gif" width="260px" height="240px"></center>
+    <div class="container">
+        <center><b><div class="error"><b>If You are a New User, please REGISTER your account (or) if Already our Customer, please LOGIN</b></div></b></center>
+    </div><br>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><b>New User Registration</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="regbox box">
+                <img class="avatar" src="img/avatar.svg">
+                <h1 style="font-size: 42px;">New User </h1>
+                <form autocomplete="off" class="form-group" action="#" id="signup-form">
+                   <p>Username</p>
+                   <input type="text" placeholder="your name" class="form-control" id="name" required>
+                   <div class="inputbox">
+                   <p>Email Address</p>
+                   <input type="text" placeholder="your email address" name="email" id="email" onkeydown="validation()" required>
+                   <b><span id="subtext"></span></b>
+                   </div>
+                   <div class="input-container">
+                   <p>Password</p>
+                   <input type="password" placeholder="password" id="password" name="password" required>
+                   <span><i class="fa fa-eye" id="eye" onclick="toggle()"></i></span></div>
+                   <div class="instruction">Atleast 8 characters, one lowercase, uppercase, number, special character</div>
+                   <div id="strength">
+                        <span class="result"></span>
+                        <span class="str-box box1"><div></div></span>
+                        <span class="str-box box2"><div></div></span>
+                        <span class="str-box box3"><div></div></span>
+                        <span class="str-box box4"><div></div></span>     
+                    </div>
+                    <div class="intext"></div>
+                   <button type="submit" value="Sign Up"><b>Sign Up</b></button><br>
+                   <br><div class="text1"><a href='login.html'>Already a user?</a></div>
+                </form>
+             </div>
+                <div class="modal-footer" style="margin-top: -40%;">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+<script>
+  var firebaseConfig = 
+  {
+    apiKey: "AIzaSyBlzxYeO9xvN3-UyFlLPhTGM7M5i_8gjT8",
+  authDomain: "quiz-corner-5afa2.firebaseapp.com",
+  projectId: "quiz-corner-5afa2",
+  storageBucket: "quiz-corner-5afa2.appspot.com",
+  messagingSenderId: "248412314293",
+  appId: "1:248412314293:web:b871a5028b610d34db3cfc",
+  measurementId: "G-TPLYH7LM42"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script src="js/mainpage.js"></script>
+</body>
+</html>
