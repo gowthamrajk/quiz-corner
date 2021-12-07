@@ -35,10 +35,25 @@
 
 ![image](https://user-images.githubusercontent.com/43011442/144991626-1d0557fe-424f-4f16-a481-6ce88b79a945.png)
 
-
 ## Landing Page
 
 ![image](https://user-images.githubusercontent.com/43011442/144991705-7efae360-630a-45a4-b52c-fdf9715e5f63.png)
+
+## New User Registration
+
+![image](https://user-images.githubusercontent.com/43011442/144991845-925c0ab4-0eb5-43d6-9dca-bae6b8089a30.png)
+![image](https://user-images.githubusercontent.com/43011442/144991901-826138b7-fd94-46ab-91d1-e39dafdf8d53.png)
+
+## Registration Success
+
+![image](https://user-images.githubusercontent.com/43011442/144992265-bc9d35fa-ba30-4d03-8b8d-8000ef19b1a8.png)
+
+## User Login
+
+![image](https://user-images.githubusercontent.com/43011442/144992050-3ff78371-4ee6-4b3c-bfad-686db1bc0426.png)
+
+## Selection Page
+
 
 
 <br>
