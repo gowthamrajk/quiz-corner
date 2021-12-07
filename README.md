@@ -54,7 +54,24 @@
 
 ## Selection Page
 
+![image](https://user-images.githubusercontent.com/43011442/144992355-20813aaa-a75b-4bda-a79f-f877b9f86664.png)
+![image](https://user-images.githubusercontent.com/43011442/144992383-72a54bd2-5e44-4aed-a332-9d53750e6a68.png)
 
+## JAVA Quiz Selection
+
+![image](https://user-images.githubusercontent.com/43011442/144992820-d3d67693-27bf-497d-9878-ca2933d61cdc.png)
+
+## C Programming Quiz Selection
+
+![image](https://user-images.githubusercontent.com/43011442/144992875-bb8b723a-1962-4810-ad03-bffea4f2de6f.png)
+
+## Test Summary
+
+![image](https://user-images.githubusercontent.com/43011442/144992536-69bc1a1d-8b00-4d5c-b55e-5dca2d42778a.png)
+
+## Author Profile
+
+![image](https://user-images.githubusercontent.com/43011442/144992722-d846d3a1-5854-4678-99fa-bf2e7a34d3a1.png)
 
 <br>
 
